@@ -10,8 +10,8 @@ import (
 	"regexp"
 
 	"github.com/beevik/etree"
-	"github.com/russellhaering/goxmldsig/etreeutils"
-	"github.com/russellhaering/goxmldsig/types"
+	"github.com/axxonsoft/goxmldsig/etreeutils"
+	"github.com/axxonsoft/goxmldsig/types"
 )
 
 var uriRegexp = regexp.MustCompile("^#[a-zA-Z_][\\w.-]*$")
