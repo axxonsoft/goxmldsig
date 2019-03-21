@@ -156,7 +156,7 @@ func (ctx *ValidationContext) transform(
 	}
 
 	if canonicalizer == nil {
-		return nil, nil, errors.New("Expected canonicalization transform")
+		canonicalizer = MakeC14N11Canonicalizer()
 	}
 
 	return el, canonicalizer, nil
