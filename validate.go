@@ -110,9 +110,9 @@ func (ctx *ValidationContext) transform(
 	ref *types.Reference) (*etree.Element, Canonicalizer, error) {
 	transforms := ref.Transforms.Transforms
 
-	if len(transforms) != 2 {
-		return nil, nil, errors.New("Expected Enveloped and C14N transforms")
-	}
+	//if len(transforms) != 2 {
+	//	return nil, nil, errors.New("Expected Enveloped and C14N transforms")
+	//}
 
 	// map the path to the passed signature relative to the passed root, in
 	// order to enable removal of the signature by an enveloped signature
